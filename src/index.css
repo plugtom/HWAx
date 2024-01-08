@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.todo-app {
+  background: blue;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+ 
+}
+
+.dashboard {
+  background-color: skyblue;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 8px ;
+}
+
+.form-add-todo {
+  background-color: gold;
+  padding: 8px 16px;
+  display: flex;
+  gap: 2px;
+  border-radius: 15%;
+}
+
+.form-add-todo > input {
+  flex-grow : 8;
+  font-size: large;
+  padding: 4px 8px;
+}
+
+.form-add-todo > button {
+  flex-grow : 2;
+}
+
+.todo-container {
+  /* border: 1px dashed lime; */
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.todo-item {
+  background-color: aqua;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.todo-item p{
+  width: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-item .btn-group {
+  display: flex;
+  gap: 4px;
+}
+
+.todo-item .btn-group a {
+  border: 1px solid silver;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+
+
+
